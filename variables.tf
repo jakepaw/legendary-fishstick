@@ -73,6 +73,10 @@ variable "admin-role" {
   default = "roles/storage.admin"
 }
 
+variable "tenant" {
+  default = "io-cloud"
+}
+
 variable "object-admin-role" {
   default = "roles/storage.objectAdmin"
 }
