@@ -40,6 +40,11 @@ variable "name" {
   default     = "test"
 }
 
+variable "cost-center" {
+  description = "name of bucket without tenant name and env name"
+  default     = "12345"
+}
+
 variable "classification" {
   default = "proprietary"
 }
