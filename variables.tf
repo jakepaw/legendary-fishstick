@@ -1,4 +1,6 @@
-variable "project" {}
+variable "project" {
+  default = "anbc-pdev"
+}
 
 variable "region" {
   default = "us-east4"
@@ -35,6 +37,7 @@ variable "labels" {
 
 variable "name" {
   description = "name of bucket without tenant name and env name"
+  default     = "test"
 }
 
 variable "classification" {
