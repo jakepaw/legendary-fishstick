@@ -2,7 +2,7 @@ locals {
   # env    = terraform.workspace
   env = var.env == null ? terraform.workspace : var.env
 
-  name = "test-crossplane-tf"
+  name = var.name
 
   labels = null
 
