@@ -1,6 +1,7 @@
 variable "project" {}
 
 variable "region" {
+  default = "us-east4"
 }
 
 variable "location" {
@@ -24,11 +25,6 @@ variable "force-destroy" {
 variable "is-versioned" {
   type    = bool
   default = false
-}
-
-variable "tenant" {
-  description = "the tenant object that is returned by a helper module"
-  type        = any
 }
 
 variable "labels" {
