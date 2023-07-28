@@ -24,6 +24,7 @@ resource "google_storage_bucket" "this" {
   labels = merge(
     local.labels,
     { tenant = var.tenant },
+    { costcenter = var.cost-center },
     { dataclassification = var.classification }
   )
 }
